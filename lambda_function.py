@@ -18,7 +18,11 @@ def lambda_handler(event, context):
             service=service_name,
             forceNewDeployment=True
         )
+<<<<<<< HEAD
         logger.info(f'Service {service_name} restarted successfully with no issue')
+=======
+        logger.info(f'Service {service_name} restarted successfully')
+>>>>>>> e03450248620a9bfbdda12d10fec66a7bea47f76
     except Exception as e:
         logger.error(f'Service {service_name} restart failed: {e}')
         raise e
